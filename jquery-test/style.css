@@ -1,0 +1,77 @@
+/*RESET*/
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+
+    line-height: 1.2;
+    letter-spacing: 0em;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+h1{font-size: 2em; font-weight: 400;}
+h2{font-size: 1.8em; font-weight: 600;}
+h3{font-size: 1.5em; font-weight: 800;}
+p{margin-bottom: 15px;}
+b, strong{font-weight: bold;}
+mark{padding: 5px 10px; background: #eee;}
+ul{list-style: none;}
+img{border: none; max-width: 100%; vertical-align: middle;}
+small{font-size: 0.75em; color: #555;}
+a{text-decoration: none; color: #09f;}
+a img{border: 0;}
+
+/*MEDIAS*/
+object,
+embed,
+video,
+iframe,
+ifram[style]{
+    max-width: 100%;
+    height: auto;
+}
+
+/*BOX GERAL*/
+.container{float: left; width: 100%; background-color: rgb(66, 133, 244)}
+.content{display: block; margin: 0 auto; padding: 10px 20px; width: 90%; max-width: 1200px; background: rgba(255,255,255,0.3);}
+.fontzero{font-size: 0;}
+.clear{clear: both;}
+
+textarea{
+    width: 49%;
+    font-size: 1.5em;
+    font-weight: bold;
+    float: left;
+}
+
+form .j_codigo{
+    float: right;
+    padding: 10px;
+    width: 47%;
+    min-height: 840px;
+    background: #ccc;
+    border: solid #999 2px;
+    border-radius: 2px;
+}
+
+.j_button{
+    float: left;
+    margin: 5px 800px 10px 0px;
+    padding: 3px;
+    background-color: grey;
+    color: white;
+}
+
+.j_button:hover{
+    cursor: pointer;    
+}
+
+#slider { 
+    margin: 10px; 
+}

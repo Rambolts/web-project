@@ -1,0 +1,65 @@
+body {
+  font-size:           small;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  line-height:         1.6em; }
+
+h1, h2 {
+  color:               #007e7e; }
+
+h1 {
+  font-size:           150%; }
+
+h2 {
+  font-size:           130%; }
+
+#logo {
+	text-align: center; }
+
+#guarantee {
+	text-align: center;
+	font: italic 1em/1.9em Georgia, "Times New Roman", Times, serif;
+	color: #444444;
+	border: 1px dashed white;
+	background-color: #a7cece;
+  	padding: 10px 25px;
+	margin: 10px 30px 30px 30px; }
+
+
+#elixirs {
+	border: #007e7e thin solid;
+	margin: 40px 15%;
+	padding: 0px 10px 20px 10px;
+	text-align: center;
+	line-height: 1;	
+	background: url(../images/cocktail.gif) repeat-x; }	
+	
+#elixirs h2 {
+	color: #1a1a1a; }
+		
+#elixirs h3 {	
+	color: #d12c47; }
+
+		
+
+
+#playlist ul{
+	font-size: 0.9em;
+	line-height: 1.6; }
+			
+.cd {
+	font-style: italic; }
+.artist {
+	font-weight: bold; }
+	
+	
+	
+#footer {
+	border-top: 1px solid black;
+	font-size: 60%;
+	line-height: normal;
+	text-align: center;
+	padding: 10px 0px;
+	margin-top: 20px; }
+	
+	
+	

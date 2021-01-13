@@ -1,0 +1,181 @@
+body { 
+  background-color: #b5a789;
+  font-family:      Georgia, "Times New Roman", Times, serif;
+  font-size:        small;
+  margin:           0px 100px;
+}
+
+h1 { font-size: 120%; color: #954b4b; }
+div.tableContainer { display: table; border-spacing: 10px; }
+div.tableRow { display: table-row; }
+
+header.top {
+  background-color: #675c47;
+  margin:           10px 10px 0px 10px;
+  height:           108px;
+}
+
+header.top img {
+  margin:           0px 20px;
+}
+
+header.top img:last-child {
+  float:            right;
+}
+
+section#drinks {
+  display:          table-cell;
+  vertical-align:   top;
+  width:            20%;
+  padding:          15px;
+  background-color: #efe5d0;
+}
+
+section#drinks h1 {
+  text-transform:  uppercase;
+}
+
+section#main, section#blog, section#form {
+  display:          table-cell;
+  vertical-align:   top;
+  background:       #efe5d0 url(../images/background.gif) top left;
+  font-size:        105%;
+  padding:          15px;
+}
+
+aside {
+  display:          table-cell;
+  vertical-align:   top;
+  background:       #efe5d0 url(../images/background.gif) bottom right;
+  font-size:        105%;
+  padding:          15px;
+}
+
+aside#right {
+	width:           270px;
+}
+
+footer {
+  background-color: #675c47;
+  color:            #efe5d0;
+  text-align:       center;
+  padding:          15px;
+  margin:           0px 10px 10px 10px;
+  font-size:        90%;
+}
+
+.slogan { color: #954b4b; }
+
+.beanheading {
+  text-align:       center;
+  line-height:      1.8em;
+}
+
+a:link {
+  color:            #b76666;
+  text-decoration:  none;
+  border-bottom:    thin dotted #b76666;
+  border:           none;
+}
+a:visited {
+  color:            #675c47;
+  text-decoration:  none;
+  border-bottom:    thin dotted #675c47;
+  border:           none;
+}
+
+nav {
+  background-color: #efe5d0;
+  margin:           10px 10px 0px 10px;
+}
+
+nav ul {
+  text-align:       right;
+  margin:           0px;
+  padding:          4px 0px;
+  list-style-type:  none;
+}
+
+nav ul li {
+  display:          inline;
+  padding:          5px 10px;
+  text-transform:   uppercase;
+}
+
+nav ul li a:link, nav ul li a:visited {
+  color:            #954b4b;
+  border-bottom:    none;
+  font-weight:      bold;
+}
+
+nav ul li a:hover {
+  border-bottom: solid 1px #c8b99c
+}
+
+nav ul li.selected {
+  background-color: #c8b99c;
+}
+
+#award {
+  position:         absolute;
+  top:              40px;
+  right:            400px;
+}
+
+#coupon {
+  position:         fixed;
+  top:              485px;
+  left:             -70px;
+}
+
+#coupon a, img {
+  border:           none;
+}
+
+div#couponCode {
+  background:       #efe5d0 url(../images/background.gif) top left;
+  width:            541px;
+  margin:           40px auto;
+  padding:          90px;
+  border-radius:    10px;
+}
+
+form {
+	line-height:     1.6;
+}
+
+form h1 {
+	border-top:      1px solid #c8b99c;
+}
+
+div.tableCell {
+	display:         table-cell;
+	vertical-align:  top;
+}
+
+div.label {
+	width:           130px; 
+	text-align:      right;
+	padding-right:    3px;
+}
+
+textarea.form1 {
+	width:           450px;
+	max-width:       600px;
+	margin:          0px 30px 30px 30px;
+}
+
+form div.tableRow p{
+	vertical-align:  top;
+	display:         table-cell;
+	width:           200px;
+}
+
+form div.tableRow p:first-child{
+	text-align:      right;
+}
+
+form div.tableRow textarea {
+	display:         table-cell;
+	vertical-align:  top;
+}

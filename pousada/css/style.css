@@ -1,0 +1,56 @@
+.main-header {
+   background-image: linear-gradient(180deg, #000d, #aaa0);
+   width: 100vw;
+   height: 200px;
+   position: absolute; 
+   top: 0px;
+}
+
+.main-header img {
+   height: 150px;
+   padding: 10px 0px 10px 50px;
+}
+
+.main-header nav {
+   float: right;
+   background-color: #efe5d0;
+   margin: 110px 6% 0px 2%;
+   padding: 6px 15px;
+   border-radius: 15px;
+}
+
+.main-header nav ul li {
+   display: inline;
+}
+
+.main-header nav ul li a:link, .main-header nav ul li a:visited {
+   color: #954b4b;
+   padding: 6px 10px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.main-header nav ul li a:hover {
+   border-bottom: 2px solid gray;
+}
+
+.main-fold {
+   background-image: url("../img/thamalu04.jpeg");
+   background-size: cover;
+   text-align: center;
+   height: 100vh;
+   width: 100vw;
+}
+
+.main-fold h1 {
+   font-family: 'Gloria Hallelujah', cursive; 
+   font-size: 4em;
+   text-transform: uppercase;
+   color: #f1f1f1;
+   margin-top: 0px;
+   padding-top: calc(120px + 170px);
+}
+
+.content-fold {
+   background-color: pink;
+}

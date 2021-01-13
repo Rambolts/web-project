@@ -1,0 +1,358 @@
+/* HEADER */
+.main-header {
+   background-image: linear-gradient(180deg, #000b, #aaa0);
+   width: 100%;
+   padding: 20px 50px;
+   position: absolute;
+   top: 0; left: 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.main-header img {
+   height: 100px;
+}
+
+.main-header ul {
+   display: flex;
+}
+
+.main-header ul li {
+   margin: 0px 15px;
+}
+.main-header ul li:first-child {margin-left: 0px;}
+.main-header ul li:last-child {margin-right: 0px;}
+
+.main-header li a:link, .main-header li a:visited{
+   font-weight: bold;
+   color: #f1f1f1;
+   padding: 5px;
+   border-radius: 4px;
+}
+.main-header li a:hover { 
+   background-color: #f1f1f1;
+   color: orange;
+}
+
+@media (max-width: 1000px) {
+   .main-header {
+      flex-direction: column;
+   }
+   .main-header img {
+      margin-bottom: 15px;
+   }
+   .main-header ul li {
+      margin: 0px 10px;
+   }
+}
+
+
+/* MAIN FOLD */
+.main-fold {
+   background-image: url("../img/PraiaVermelha00.jpg");
+   background-size: cover;
+   min-height: 100vh;
+   font-size: 1.2em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.main-fold header {
+   text-align: center;
+   padding: 10px;
+   color: #f1f1f1;
+   margin-bottom: 35px;
+}
+.main-fold h1 {
+   text-transform: uppercase;
+   font-weight: bold;
+   margin: 10px;
+}
+
+.main-fold .btn {
+   padding: 20px 40px;
+   background-color: orange;
+   color: #fff;
+   border-radius: 40px;
+   font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+   .main-fold h1 {
+      font-size: 0px;
+   }
+}
+
+
+/* CONTENT FOLD */
+.content-fold {
+   background-image: url("../img/background-patterns/papyrus.png");
+   background-repeat: repeat;
+}
+
+.content-fold>header {
+   height: 130px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.content-fold>header h1 {
+   color: #2ca685;
+   margin-top: 0px;
+   margin-bottom: 5px;
+}
+
+.content-fold>header .tagline {
+   border-bottom: 2px solid #2ca685;
+   font-weight: bold;
+}
+
+.content-fold>article {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: center;
+   margin-bottom: 80px;
+}
+
+.content-fold>article header {
+   background-color: #f1f1f1;
+   color: #1f1f1fdd;
+   border: 3px dashed #2ca685;
+   border-radius: 5px;
+   flex-basis: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   order: 2;
+}
+
+.content-fold>article header h2 {
+   margin: 0px 10% 15px 10%;
+}
+
+.content-fold>article header p {
+   margin: 5px 10%;
+}
+
+.content-fold>article div {
+   flex-basis: 30%;
+   display: flex;
+   justify-content: center;
+   order: 1;
+}
+
+.content-fold>article div:last-child {
+   order: 3;
+}
+
+.content-fold>article div img {
+   height: 300px;
+   border-radius: 3px;
+   box-shadow: 3px 3px 4px 4px #444;
+}
+
+@media (max-width: 850px) {
+   .content-fold>article {
+      flex-wrap: wrap;
+   }
+   .content-fold>article header {
+      order: 1;
+      flex-basis: 80%;
+      margin-bottom: 20px;
+   }
+   .content-fold>article div {
+      flex-basis: 40%;
+   }
+   .content-fold>article div img {
+      box-shadow: none;
+   }
+}
+
+
+
+
+/* SERVICE SECTION */
+.service-section {
+   background-image: url("../img/background-patterns/old-bamboo.jpg");
+   background-repeat: repeat;
+   box-shadow: 1px 1px 2px 2px #0006;
+   display: flex;
+   flex-direction: column;
+   padding: 15px;
+   margin-bottom: 30px;
+   color: #f1f1f1;
+}
+
+.service-section>header {
+   text-align: center;
+   font-size: 0;
+}
+
+.service-section>div {
+   display: flex;
+   justify-content: space-around;
+}
+
+.service-section>div header {
+   width: 150px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.service-section img {
+   width: 55px;
+   margin-bottom: 10px;
+   box-shadow: 2px 2px 4px 4px #444;
+   border-radius: 50%;
+}
+
+.service-section h3 {
+   background-color: #1118;
+   padding: 2px 4px;
+   border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+   .service-section>div {
+      flex-wrap: wrap;
+   }
+   .service-section>div article {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: center;
+      margin: 10px 0;
+   }
+}
+
+
+/* ROOM SECTION */
+.room-section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.room-section>header {
+   height: 130px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.room-section>header h2 {
+   color: #2ca685;
+   margin-top: 0px;
+   margin-bottom: 5px;
+}
+
+.room-section>header .tagline {
+   border-bottom: 2px solid #2ca685;
+   font-weight: bold;
+}
+
+.room-section div {
+   display: flex;
+   justify-content: space-between;
+   padding: 15px 40px;
+}
+
+.room-section article{
+   background-color: #2ca685;
+   color: #fff;
+   height: 340px;
+   border: 2px dashed #f1f1f1;
+   border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   flex-basis: 20%;
+   justify-content: space-around;
+   text-align: center;
+   padding: 10px 20px;
+}
+
+.room-section article header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.room-section article header h3 {
+   border-bottom: 2px solid #f1f1f1;
+}
+
+.room-section img {
+   width: 200px;
+   margin-bottom: 20px;
+   box-shadow: 1px 1px 2px 2px #0006;
+}
+
+@media (max-width: 850px) {
+   .room-section>div {
+      flex-direction: column;
+      align-items: center;
+   }
+   .room-section>div article {
+      width: 60%;
+      margin-bottom: 30px;
+   }
+}
+
+
+
+/* INFORMATION SECTION */
+.info-section {
+   display: flex;
+   flex-direction: column;
+}
+
+.info-section>header {
+   text-align: center;
+}
+
+.info-section>div {
+   font-size: 0.9rem;
+   display: flex;
+   justify-content: space-around;
+}
+
+.info-section>div article {
+   margin: 30px;
+   flex-basis: 25%;
+}
+
+.info-section>div .info {
+}
+
+.info-section>div .redes {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.info-section>div .redes img {
+   width: 40px;
+}
+
+
+
+
+/* FOOTER */
+footer {
+   background-color: #151515;
+   color: #f1f1f1;
+   text-align: center;
+   padding: 10px;
+   font-size: 0.7em;
+}
+
+
+#map {
+   height: 100%;
+   background-color: red;
+}

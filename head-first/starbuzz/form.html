@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>The Starbuzz Bean Machine</title>
+		<link rel="stylesheet" href="css/starbuzz.css">
+	</head> 
+
+	<body>
+		<header class="top">
+			<img src="images/headerLogo.gif" alt="Starbuzz Coffee Logo">
+			<img src="images/headerSlogan.gif" alt="Starbuzz Coffee Slogan">
+		</header>
+		
+		<nav>
+			<ul>
+				<li><a title="Home" href="index.html">Home</a></li>
+				<li><a title="Blog" href="blog.html">Blog</a></li>
+				<li class="selected"><a title="Machine" href="form.html">Machine</a></li>
+				<li><a title="Recipes" href="">Recipes</a></li>
+				<li><a title="Locations" href="">Locations</a></li>
+			</ul>
+		</nav>
+
+		<div class="tableContainer">
+			<div class="tableRow">
+				<section id="drinks">
+					<h1>Beverages</h1>
+					<p>House Blend, $1.49</p>
+					<p>Mocha Cafe Latte, $2.35</p>
+					<p>Cappuchino, $1.89</p>
+					<p>Chai Tea, $1.85</p>
+					
+					<h1>Elixirs</h1>
+					<p>
+						We proudly serve elixirs brewed by our friends 
+						at the Head First Lounge.
+					</p>
+					<p>Green Tea Cooler, $2.99</p>
+					<p>Raspberry Ice Concentration, $2.99</p>
+					<p>Blueberry Bliss Elixir, $2.99</p>
+					<p>Cranberry Antioxidant Blast, $2.99</p>
+					<p>Chai Chiller, $2.99</p>
+					<p>Black Brain Brew, $2.99</p>
+				</section>
+			
+				<section id="form">
+					<h1>The Starbuzz Bean Machine</h1>
+					<p>Fill out the form below and click "order now" to order</p>
+					
+					<form action="http://starbuzzcoffee.com/processorder.php" method="POST">
+						<h1>Bean :</h1>
+						<div class="tableContainer">
+							<div class="tableRow">
+								<div class="tableCell label">
+									<label>Chose your beans :</label>
+								</div>
+								<div class="tableCell"> 
+										<select name="beans">
+											<option value="House Blend">House Blend</option>
+											<option value="Bolivia">Shade Grown Bolivia Supremo</option>
+											<option value="Guatemala">Organic Guatemala</option>
+											<option value="Kenya">Kenya</option>
+										</select>
+								</div>
+							</div>
+
+							<div class="tableRow">
+								<div class="tableCell label">
+									<label>Type :</label>
+								</div>
+								<div class="tableCell">
+										<input type="radio" name="beantype" value="whole"> Whole Bean <br>
+										<input type="radio" name="beantype" value="ground" checked> Ground <br>
+								</div>
+							</div>
+							
+							<div class="tableRow">
+								<div class="tableCell label">			
+									<label>Number of bags : </label>
+								</div>
+								<div class="tableCell">
+										<input type="number" name="bags" min="1" max="10" value="1"> <br>
+								</div>
+							</div>
+							
+							<div class="tableRow">
+								<div class="tableCell label">
+									<label>Must Arrive by Date :</label> 
+								</div>
+								<div class="tableCell">
+										<input type="date" name="date"> <br>
+								</div>
+							</div>
+							
+							<div class="tableRow">
+								<div class="tableCell label">
+									<label>Extras :</label>
+								</div>
+								<div class="tableCell">
+										<input type="checkbox" name="extras[]" value="giftwrap"> Gift Wrap<br>
+										<input type="checkbox" name="extras[]" value="catalog" checked> Catalog with order
+								</div>
+							</div>
+						</div>
+						
+						<h1>Ship to :</h1>
+						<div class="tableContainer">	
+							<div class="tableRow">
+								<div class="tableCell label">
+									<label>Name :</label>
+								</div>
+								<div class="tableCell">
+									<input type="text" name="name" value="" required>         <!-- name -->
+								</div>
+							</div>
+							
+							<div class="tableRow">
+								<div class="tableCell label">
+									<label>Address :</label>
+								</div>
+								<div class="tableCell">
+									<input type="text" name="address" value="">               <!-- address -->
+								</div>
+							</div>
+							
+							<div class="tableRow">
+								<div class="tableCell label">
+									<label>City :</label>
+								</div>
+								<div class="tableCell">
+									<input type="text" name="city" value="">                  <!-- city -->
+								</div>
+							</div>
+							
+							<div class="tableRow">
+								<div class="tableCell label">
+									<label>State :</label>
+								</div>
+								<div class="tableCell">
+									<input type="text" name="state" value="">                 <!-- state -->
+								</div>
+							</div>
+							
+							<div class="tableRow">
+								<div class="tableCell label">
+									<label>Zip :</label>
+								</div>
+								<div class="tableCell">
+									<input type="text" name="zip" value="">                   <!-- zip -->
+								</div>
+							</div>
+							
+							<div class="tableRow">
+								<div class="tableCell label">
+									<label>Phone :</label>
+								</div>
+								<div class="tableCell">
+									<input type="tel" name="phone" value="">                  <!-- phone -->
+								</div>
+							</div>		
+						</div>
+						
+						<h1>Customer Comments :</h1>
+						<textarea name="comments" rows="10" cols="48" class="form1"></textarea>
+						
+						<input type="submit" value="Order Now">
+					</form>
+				</section>
+
+				<aside id="right">
+					<p class="beanheading">
+						<img src="images/bag.gif" alt="Bean Machine bag">
+						<br>
+						ORDER ONLINE
+						with the 
+						<a href="form.html">BEAN MACHINE</a>
+						<br>
+						<span class="slogan">
+							FAST <br>
+							FRESH <br>
+							TO YOUR DOOR <br>
+						</span>
+					</p>
+					<p>
+						Why wait?You can order all our fine coffees right from the Internet with our new, 
+						automated Bean Machine.How does it work?Just click on the Bean Machine link, 
+						enter your order, and behind the scenes, your coffee is roasted, ground 
+						(if you want), packaged, and shipped to your door.
+					</p>
+				</aside>
+			</div>
+		</div>
+						
+		<!-- <div id="award">
+			<img src="images/award.gif" alt="Roaster of the Year award">
+		</div> 
+		
+		<div id="coupon">
+			<a href="freecoffee.html" title="Click here to get your free Coffee" target="_blank">
+				<img src="images/ticket.gif" alt="Coupon Coffee">
+			</a>
+		</div>-->
+
+		<footer>
+			&copy; 2012, Starbuzz Coffee
+			<br>
+			All trademarks and registered trademarks appearing on 
+			this site are the property of their respective owners.
+		</footer>
+	</body>
+</html>

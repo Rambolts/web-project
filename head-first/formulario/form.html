@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<title>Exemplo Formulário</title>
+	</head>
+	
+	<body>
+		<form action="certo.html" method="POST">
+			<div>	
+				<p>
+					Just type in your name (and click Submit) to enter the contest: 
+					<br>			
+					First name: <input type="text" name="firstname" value=""> <br>
+					Last name:  <input type="text" name="lastname"  value=""> <br>
+				</p>
+			</div>
+			
+			<div>
+				<p>
+					Radio: <br>
+					<input type="radio" name="hot-or-not" value="hot"> hot
+					<input type="radio" name="hot-or-not" value="not"> not <br>
+				</p>
+			</div>
+			
+			<div>
+				<p>	
+					Checkbox: <br>
+					<input type="checkbox" name="spice" value="salt"> Salt <br>
+					<input type="checkbox" name="spice" value="pepper"> Pepper <br>
+					<input type="checkbox" name="spice" value="garlic"> Garlic <br>
+				</p>
+			</div>
+			
+			<div>
+				<p>
+					Text-area: <br>
+					<textarea name="comments" rows="10" cols="48"></textarea>
+				</p>
+			</div>
+			
+			<div class="blocks">
+				<p>
+					Select: <br>
+					<select name="characters">
+						<option value="Buckaroo">Buckaroo Banzai</option>
+						<option value="Tommy">Perfect Tommy</option>
+						<option value="Penny">Penny Priddy</option>
+						<option value="Jersey">New Jersey</option>
+						<option value="John">John Parker</option>
+					</select>
+					<br>
+				</p>
+				
+				<p>
+					Number: <br>
+					<input type="number" min="0" max="20">
+					<br>
+				</p>
+				
+				<p>
+					Range: <br>
+					<input type="Range" min="0" max="20" step="1">
+					<br>
+				</p>
+				
+				<p>
+					Color: <br>
+					<input type="color">
+					<br>
+				</p>
+				
+				<p>
+					Date: <br>
+					<input type="date">
+					<br>
+				</p>
+				
+				<p>
+					e-mail: <br>
+					<input type="email">
+					<br>
+				</p>
+				
+				<p>
+					Telephone: <br>
+					<input type="tel">
+					<br>
+				</p>
+				
+				<p>
+					Url: <br>
+					<input type="url">
+					<br>
+				</p>
+			</div>
+			
+			<p id="submit">			
+				<input type="submit">
+			</p>
+		</form>
+	</body>
+</html>
